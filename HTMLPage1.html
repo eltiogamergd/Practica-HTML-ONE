@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--Existe una convención que establece el uso de etiquetas en letras minúsculas en HTML,
+    sin embargo, si usamos letras mayúsculas, para el navegador no habrá diferencia alguna.-->
+    <!--document.write() es equivalente a console.WriteLine() en C#-->
+    <!--En Javascript comillas equivalen a texto-->
+    <!--Puedo concatenar valores usando el operador aritmetico "+"-->
+    <!--La ventaja es que con el document.write podemos pasar al resultado de un cálculo y
+        entre otras cosas, de manera dinámica ya que el mundo HTML no es capaz de realizar
+        operaciones matemáticas.-->
+    <!--declaramos una variable que el editor identifica automaticvamente usando "var"-->
+
+    <script>
+
+        var year = 2020;
+
+        document.write("CÓDIGO COPIADO DE VISUAL STUDIO CODE A VISUAL STUDIO 2022");
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("Pedro tiene actualente " + (year - 2000));
+        /*Ya que el código se lee de arriba hacia abajo, si cambio la variable "year", todo lo de
+        abajo se actualiza*/
+
+        year = 2022;
+
+        document.write("<br>");
+        document.write("Pedro tiene actualente " + (year - 2000));
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("OPCIÓN 1");
+        document.write("<br>");
+        document.write("La suma de las edades de Juan, Pedro y Carlos es..." + (20 + 25 + 15));
+        document.write("<br>");
+
+
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("OPCIÓN 2")
+        document.write("<br>");
+        document.write("La suma de las edades de Juan, Pedro y Carlos es...");
+        document.write("<br>");
+        document.write(20 + 25 + 15);
+
+    </script>
+
+    <h1>Nuevo Ejercicio</h1>
+
+    <script>
+
+        document.write("OPCIÓN 1" + ("(no óptima)"));
+        document.write("<br>");
+        document.write("<br>");
+
+        year = 2020
+
+        document.write("Jimena tiene: :" + (year - 2010) + " años");
+        document.write("<br>");
+
+        document.write("Paola tiene: :" + (year - 1995) + " años");
+        document.write("<br>");
+
+        document.write("Laura tiene: :" + (year - 2005) + " años");
+        document.write("<br>");
+
+        promedio = (10 + 25 + 15) / 3
+
+        //La función Math.round() es para promediar un numero decimal.
+        document.write("El promedio de las edades de las 3 mujeres es: " + Math.round(promedio));
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("OPCIÓN 2");
+        document.write("<br>");
+        document.write("<br>");
+
+        var edadJimena = 10;
+        var edadPaola = 25;
+        var edadLaura = 15;
+
+        document.write("El promedio de las edades de las 3 mujeres es: " + Math.round(((edadJimena + edadPaola + edadLaura) / 3)));
+
+    </script>
+</body>
+</html>
